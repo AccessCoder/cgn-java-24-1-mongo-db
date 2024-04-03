@@ -1,4 +1,7 @@
 package de.neuefische.cgnjava241mongodb;
 
-public record Student(String id, String name) {
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document("Students")
+public record Student(String id, String name, int age) {
 }
